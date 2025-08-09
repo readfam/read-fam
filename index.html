@@ -2,85 +2,142 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReadFam App</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f7f7fa;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ReadFam App</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f7fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
 
-        header {
-            background: #4a90e2;
-            color: #fff;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
+    header {
+      background: #4a90e2;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 3px 8px rgb(74 144 226 / 0.4);
+    }
 
-        main {
-            max-width: 500px;
-            margin: 2rem auto;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-            padding: 2rem;
-        }
+    main {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgb(0 0 0 / 0.1);
+      padding: 2.5rem 2rem;
+    }
 
-        h1 {
-            margin: 0 0 0.5rem 0;
-            font-size: 2rem;
-        }
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
 
-        p {
-            color: #555;
-            margin-bottom: 2rem;
-        }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      color: #222;
+    }
 
-        .btn {
-            display: inline-block;
-            background: #4a90e2;
-            color: #fff;
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 4px;
-            text-decoration: none;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
+    p {
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1.8rem;
+      font-size: 1.1rem;
+    }
 
-        .btn:hover {
-            background: #357abd;
-        }
+    .btn {
+      display: inline-block;
+      background: #4a90e2;
+      color: #fff;
+      padding: 0.75rem 1.8rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+      user-select: none;
+    }
 
-        footer {
-            text-align: center;
-            color: #aaa;
-            font-size: 0.9rem;
-            margin: 2rem 0 1rem 0;
-        }
-    </style>
+    .btn:hover {
+      background: #357abd;
+    }
+
+    .contact-card {
+      background: #eef5ff;
+      border-radius: 8px;
+      padding: 1.5rem 2rem;
+      box-shadow: inset 0 0 10px rgb(74 144 226 / 0.2);
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .contact-card h3 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: #4a90e2;
+      font-weight: 700;
+    }
+
+    .contact-email {
+      font-size: 1.2rem;
+      color: #222;
+      font-weight: 600;
+    }
+
+    .contact-email a {
+      color: #4a90e2;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-email a:hover {
+      color: #357abd;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      color: #aaa;
+      font-size: 0.9rem;
+      margin: 3rem 0 1rem;
+      user-select: none;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <h1>ReadFam</h1>
-        <p>Connect, share, and read together as a family.</p>
-    </header>
-    <main>
-        <h2>Welcome to ReadFam!</h2>
-        <p>
-            ReadFam helps families discover, share, and enjoy books together. Create your family library, track reading
-            progress, and connect with loved ones over stories.
-        </p>
+  <header>
+    <h1>ReadFam</h1>
+    <p>Connect, share, and read together as a family.</p>
+  </header>
 
-    </main>
-    <footer>
-        &copy; 2024 ReadFam. All rights reserved.
-    </footer>
+  <main>
+    <h2>Welcome to ReadFam!</h2>
+    <p>
+      ReadFam helps families discover, share, and enjoy books together. Create your family library, track reading
+      progress, and connect with loved ones over stories.
+    </p>
+
+    <section class="contact-card" aria-labelledby="contact-heading">
+      <h3 id="contact-heading">Contact Us</h3>
+      <p class="contact-email">
+        📧 Email us at <a href="mailto:readfamapple@gmail.com">readfamapple@gmail.com</a>
+      </p>
+      <a href="mailto:readfamapple@gmail.com" class="btn" aria-label="Send email to ReadFam">Send Email</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 ReadFam. All rights reserved.
+  </footer>
 </body>
 
 </html>
